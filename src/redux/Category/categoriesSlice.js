@@ -9,7 +9,7 @@ const categoriesSlice = createSlice({
   initialState,
   reducers: {
     extraReducer: (state) => {
-      state.categories = true;
+      state.categories = 'Under construction';
     },
   },
 });
