@@ -3,11 +3,12 @@ import { useSelector } from 'react-redux';
 import Book from './Book';
 
 const ShowBook = () => {
-  const { books } = useSelector((store) => store.Book);
+  const books = useSelector((store) => store.books.books);
   return (
     <div>
       {books.map((element) => (
-        <Book id={element.id} key={element.id} title={element.title} author={element.id} />))}
+        <Book key={element.id} book={element} />
+      ))}
     </div>
   );
 };

@@ -5,15 +5,15 @@ const initialState = {
 };
 
 const categoriesSlice = createSlice({
-  name: 'categorie',
+  name: 'category',
   initialState,
   reducers: {
-    extraReducer: (state) => {
+    status: (state) => {
       state.categories = 'Under construction';
     },
   },
 });
 
-export const { extraReducer } = categoriesSlice.actions;
+export const { status } = categoriesSlice.actions;
 
 export default categoriesSlice.reducer;

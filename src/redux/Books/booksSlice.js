@@ -6,19 +6,19 @@ const initialState = {
       item_id: 'item1',
       title: 'The Great Gatsby',
       author: 'John Smith',
-      category: 'Fiction',
+      categorie: 'Fiction',
     },
     {
       item_id: 'item2',
       title: 'Anna Karenina',
       author: 'Leo Tolstoy',
-      category: 'Fiction',
+      categorie: 'Fiction',
     },
     {
       item_id: 'item3',
       title: 'The Selfish Gene',
       author: 'Richard Dawkins',
-      category: 'Nonfiction',
+      categorie: 'Nonfiction',
     },
   ],
 };
@@ -31,7 +31,7 @@ const booksSlice = createSlice({
       state.books = [...state.books, payload];
     },
     deleteBook: (state, { payload }) => {
-      state.books = state.books.filter((book) => book.id !== payload);
+      state.books = state.books.filter((book) => book.books !== payload);
     },
   },
 });

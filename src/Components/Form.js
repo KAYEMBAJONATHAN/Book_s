@@ -13,6 +13,7 @@ const Form = () => {
     if (title.trim() && author.trim()) {
       dispatch(
         addBook({
+          id: '',
           title,
           author,
           categorie: '',
