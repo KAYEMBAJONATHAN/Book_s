@@ -2,8 +2,8 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 // Async thunk to fetch books from an API
-const API = 'blZHfy5vqsWklQMhjTdx';
-const URL = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/${API}/books/`;
+const APIKEY = 'blZHfy5vqsWklQMhjTdx';
+const URL = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/${APIKEY}/books/`;
 
 export const fetchBooks = createAsyncThunk('book/fetchBooks',
   async () => {
@@ -39,7 +39,7 @@ const booksSlice = createSlice({
       })
       .addCase(fetchBooks.fulfilled, (state, action) => {
         state.status = 'succeeded';
-        state.books = action.payload;
+        state.books = action.payload || [];
       })
       .addCase(fetchBooks.rejected, (state, action) => {
         state.status = 'failed';
