@@ -15,17 +15,17 @@ const Book = ({ book }) => {
         <p className="books_author">{author}</p>
         <ul className="action">
           <li>
-            <button type="button">Comments</button>
+            <button className="comment" type="button">Comments</button>
           </li>
           <div className="seperator" />
           <li>
-            <button type="submit" onClick={() => dispatch(deleteBook(book))}>
-              Delete
+            <button className="comment" type="submit" onClick={() => dispatch(deleteBook(book))}>
+              Remove
             </button>
           </li>
           <div className="seperator" />
           <li>
-            <button type="button">Edit</button>
+            <button className="comment" type="button">Edit</button>
           </li>
         </ul>
       </div>
@@ -36,8 +36,8 @@ const Book = ({ book }) => {
             <p className="progress-percent">50%</p>
             <p className="progress-text">Completed</p>
           </div>
-          <div className="sep" />
         </div>
+        <div className="sep" />
         <div className="card-right">
           <div>
             <h4>CURRENT CHAPTER</h4>
