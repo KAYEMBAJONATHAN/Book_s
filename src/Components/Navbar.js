@@ -9,7 +9,7 @@ const NavBar = () => (
         <a href="/">Books</a>
       </li>
       <li className="link">
-        <a href="/categories">Categories</a>
+        <a className="category" href="/categories">Categories</a>
       </li>
     </ul>
     <i className="fas fa-user user" />
