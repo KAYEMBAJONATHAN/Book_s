@@ -1,0 +1,39 @@
+.form-container {
+  margin: 20px 3rem;
+  border-top: 1px solid #c0c0c0;
+  padding-bottom: 2rem;
+  display: flex;
+  line-height: 4rem;
+  gap: 0.1rem;
+  flex-direction: column;
+}
+
+h3 {
+  color: grey;
+  font-size: 23px;
+}
+
+input {
+  padding: 5px;
+  width: 38%;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: 1px solid #c0c0c0;
+  background-color: #fff;
+}
+
+.button {
+  padding: 15px 25px;
+  width: 24%;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: rgb(252, 252, 252);
+  background-color: #048ef8;
+}
+
+.form {
+  display: flex;
+  gap: 15px;
+}

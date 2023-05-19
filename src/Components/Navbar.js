@@ -1,16 +1,18 @@
 import React from 'react';
+import '../Style/navbar.css';
 
 const NavBar = () => (
-  <nav>
-    <h1>Bookstore</h1>
+  <nav className="head-nav">
     <ul className="navbar">
-      <li>
+      <li className="head-link">Bookstore CMS</li>
+      <li className="link">
         <a href="/">Books</a>
       </li>
-      <li>
+      <li className="link">
         <a href="/categories">Categories</a>
       </li>
     </ul>
+    <i className="fas fa-user user" />
   </nav>
 );
 
