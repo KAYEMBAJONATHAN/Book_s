@@ -26,7 +26,7 @@ const ShowBook = () => {
   }
 
   return (
-    <div>
+    <div className="books-list">
       {books.map((book) => (
         <Book
           book={book}
